@@ -1,9 +1,9 @@
 import os
 
 class Config(object):
-	BOT_TOKEN = os.environ.get("BOT_TOKEN")
-	APP_ID = int(os.environ.get("APP_ID"))
-	API_HASH = os.environ.get("API_HASH")
+	BOT_TOKEN = os.environ.get("BOT_TOKEN", "7729048941:AAFPagL2Wqk9kF1_eX0BfeWUMGC3yDw4Ym8")
+	APP_ID = int(os.environ.get("APP_ID", "12380656"))
+	API_HASH = os.environ.get("API_HASH", "d927c13beaaf5110f25c505b7c071273")
 	DATABASE_URL = os.environ.get("DATABASE_URL")
 	SUDO_USERS = list(set(int(x) for x in ''.split()))
 	SUDO_USERS.append(853393439)
